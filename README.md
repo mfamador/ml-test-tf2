@@ -2,7 +2,7 @@
 
 ## Install requirements
 
-    pip3.6 install -r requirements.txt 
+    pip3 install -r requirements.txt 
 
 ## Jupyter notebooks to analyse the dataset and create the model for the different scenarios:
     
