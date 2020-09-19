@@ -6,7 +6,7 @@ import pickle
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-from tensorflow.keras import layers
+from tensorflow.keras.layers import Dense, InputLayer
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.utils import to_categorical
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
@@ -67,16 +67,16 @@ def train_and_save_model(dataset,
 
     # build the model
     model = tf.keras.Sequential([
-        layers.Dense(512, activation='relu', name='hidden_layer', input_shape=(max_words,)),
-        layers.Dense(num_classes, activation='softmax', name='output')
+        InputLayer(batch_input_shape=(max_words,)),
+        Dense(512, activation='relu', name='hidden_layer'),
+        Dense(num_classes, activation='softmax', name='output')
     ])
     lr = 1e-5  # Keep it small when transfer learning
-    batch_size = 32
-    epochs = 4
     model.compile(
-        optimizer=tf.keras.optimizers.Adam(learning_rate=lr),
         loss='categorical_crossentropy',
+        optimizer=tf.keras.optimizers.Adam(learning_rate=lr),
         metrics=['accuracy'])
+    model.run_eagerly = True
     # train the model
     model.fit(x_train, y_train,
               batch_size=batch_size,

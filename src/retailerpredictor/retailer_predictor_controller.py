@@ -25,6 +25,7 @@ class RetailerPredictorController(object):
 
     def predict_retailer(self, feature):
         try:
+            self.model.run_eagerly = True
             prediction = self.model.predict(feature)
 
             return prediction
