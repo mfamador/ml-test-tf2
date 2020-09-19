@@ -7,5 +7,5 @@ ml-test-marco.iml
 .ipython/
 .keras/
 .local/
-
+.jupyter
 __pycache__
