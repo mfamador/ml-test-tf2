@@ -67,7 +67,7 @@ def train_and_save_model(dataset,
 
     # build the model
     model = tf.keras.Sequential([
-        InputLayer(batch_input_shape=(max_words,)),
+        InputLayer(input_shape=(max_words,)),
         Dense(512, activation='relu', name='hidden_layer'),
         Dense(num_classes, activation='softmax', name='output')
     ])
