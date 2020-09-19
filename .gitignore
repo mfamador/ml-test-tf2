@@ -1,0 +1,11 @@
+ml-test-marco.iml
+.idea
+
+.ipynb_checkpoints/
+.cache/
+.config
+.ipython/
+.keras/
+.local/
+
+__pycache__
