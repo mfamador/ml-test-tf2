@@ -13,7 +13,7 @@ GET http://localhost:8080/predict?retailer="harrods xpto"
 
 ###
 
-GET http://localhost:8080/predict?retailer="Deben "
+GET http://localhost:8080/predict?retailer="TK a Maxx x"
 
 ###
 
@@ -21,6 +21,6 @@ GET http://localhost:8080/predict?retailer="harrods"
 
 ###
 
-GET http://localhost:8080/predict?retailer="boot s"
+GET http://localhost:8080/predict?retailer="boots uk"
 
 ###
