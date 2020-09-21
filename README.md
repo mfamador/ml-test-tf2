@@ -1,5 +1,7 @@
 # Machine Learning experiments
 
+tensorflow 2
+
 ## Install requirements
 
     pip3 install -r requirements.txt 
@@ -15,7 +17,7 @@
     ./1-create-model.sh
 or
 
-    python3.6 src/modeltrainer/model_trainer.py -i receipt_data.csv 
+    python3 src/modeltrainer/model_trainer.py -i receipt_data.csv 
 
 ## Service to predict retailer name from OCR raw data
 
