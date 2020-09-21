@@ -3,7 +3,7 @@ ml-test-marco.iml
 
 .ipynb_checkpoints/
 .cache/
-.config
+.config/
 .ipython/
 .keras/
 .local/
