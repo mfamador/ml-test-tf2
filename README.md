@@ -6,9 +6,9 @@
 
 navigate to `notebooks` and open 
 
-    [multi-label-text-classification.ipynb](notebook/multi-label-text-classification.ipynb)
+[multi-label-text-classification.ipynb](notebook/multi-label-text-classification.ipynb)
 
-    [time-series-prediction-LSTM.ipynb.ipynb](notebook/time-series-prediction-LSTM.ipynb)
+[time-series-prediction-LSTM.ipynb.ipynb](notebook/time-series-prediction-LSTM.ipynb)
 
 
 # Dockerize and run a service to make predictions
