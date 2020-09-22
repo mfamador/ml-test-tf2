@@ -1,16 +1,22 @@
-# Machine Learning experiments
+# Machine Learning experiments with Tensorflow 2
 
-tensorflow 2
+## Jupyter notebooks to analyse the dataset and create the model for the different scenarios:
+
+    docker run --name jupyter --rm -v $PWD:/home/jovyan -p 8888:8888 jupyter/tensorflow-notebook
+
+navigate to `notebooks` and open 
+
+    [multi-label-text-classification.ipynb](notebook/multi-label-text-classification.ipynb)
+
+    [time-series-prediction-LSTM.ipynb.ipynb](notebook/time-series-prediction-LSTM.ipynb)
+
+
+# Dockerize and run a service to make predictions
 
 ## Install requirements
 
     pip3 install -r requirements.txt 
 
-## Jupyter notebooks to analyse the dataset and create the model for the different scenarios:
-    
-[multi-label-text-classification.ipynb](notebook/multi-label-text-classification.ipynb)
-
-[time-series-prediction-LSTM.ipynb.ipynb](notebook/time-series-prediction-LSTM.ipynb)
 
 ## Train and save the model
 
