@@ -4,7 +4,8 @@
 
     docker run --name jupyter --rm -v $PWD:/home/jovyan -p 8888:8888 jupyter/tensorflow-notebook
 
-navigate to `notebooks` and open 
+Open the Jupyter url with the given token, ex., http://127.0.0.1:8888/\?token\=<REDACTED> and navigate to the `notebooks` folder
+    
 
 [multi-label-text-classification.ipynb](notebook/multi-label-text-classification.ipynb)
 
